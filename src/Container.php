@@ -8,8 +8,8 @@ class Container
     {
     }
 
-    public function method1()
+    public function returnFakeDog()
     {
-        return 'method1';
+        throw new \InvalidArgumentException('i\'m not a dog');
     }
 }
