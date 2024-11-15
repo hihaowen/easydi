@@ -3,7 +3,7 @@
     "type": "library",
     "description": "",
     "keywords": ["di", "dependency injection", "container"],
-    "homepage": "https://wen.freetzi.com",
+    "homepage": "https://ltwen.com",
     "license": "MIT",
     "authors": [
         {
@@ -29,7 +29,8 @@
     },
     "autoload-dev": {
         "psr-4": {
-            "DI\\Test\\UnitTest\\": "tests/UnitTest/"
+            "DI\\Test\\UnitTest\\": "tests/UnitTest/",
+            "DI\\Test\\IntegrationTest\\": "tests/IntegrationTest/"
         }
     },
     "scripts": {
