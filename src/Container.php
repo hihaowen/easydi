@@ -109,10 +109,6 @@ class Container implements ContainerInterface
     public function make(string $name, array $parameters = [])
     {
         if (!$this->definitionPool->has($name)) {
-            if (array_key_exists($name, $this->sharedEntries)) {
-                return $this->sharedEntries[$name];
-            }
-
             throw new NotFoundException('不存在的条目: '.$name);
         }
 
